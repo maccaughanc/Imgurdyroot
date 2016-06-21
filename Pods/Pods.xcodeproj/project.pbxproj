@@ -36,7 +36,6 @@
 		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397249AFC70E747116BEDC677CA54AF /* Download.swift */; };
 		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F13CBAD735247A982C9278753CAC10 /* Response.swift */; };
 		658C3D4D652DA9B9EBF528D0BE2420AA /* Pods-Imgurdyroot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC84A13416A0323E0DF03FF8D69D739 /* Pods-Imgurdyroot-dummy.m */; };
-		686F6C9643E8D8B34E4449E2DA7613C6 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B1ED9C6D67BCEB23F6503D6BC6A2A /* NSNotificationCenter+AnyPromise.m */; };
 		6CB7FFD375C1E8A008ADEDE779A25538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79972E80205FE9D58E7927E9BF633879 /* Foundation.framework */; };
 		6CB84A616D7B4D189A4E94BD37621575 /* OMGUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F85D5842DF00BE7DCF09CA653DFA4FE /* OMGUserAgent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6CE329550A345446F238E26989A3778B /* PMKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30748287F1E8F7A0959321893881836F /* PMKAlertController.swift */; };
@@ -55,7 +54,6 @@
 		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D674C0A4E6E5C75219CCD32615999578 /* Alamofire.swift */; };
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79972E80205FE9D58E7927E9BF633879 /* Foundation.framework */; };
 		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60807DC4514FB9D5AE5ABDC66BC19173 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E6F3B70813F67969771FD436FCDE5F8 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E49932A02DE2EF54DB552C92AC247EE /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2BF5D7A13DBF72E02729AEE474DA57E /* dispatch_promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919692FD20ED659371ABD0D55D5EDA4 /* dispatch_promise.swift */; };
 		A69631931EBB0C589E973B35D581C2FF /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F964F67C0D0BAE90EA011DC41CDD0 /* URLDataPromise.swift */; };
 		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A9FDC0F0C8E66CAAFF96729EEBC8F /* Result.swift */; };
@@ -77,7 +75,6 @@
 		C7C1732EC5B43818803E217FEA36D7DD /* NSURLConnection+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3FFFA4CCF5DC76D32E956DDEC1B8C /* NSURLConnection+Promise.swift */; };
 		CA9B83A8354CC04B86C6DC2C82808FB2 /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B69B1BA41F2BCE30310659D68CB8439 /* UIView+AnyPromise.m */; };
 		CD7972AEF7DFBB35BD6306647E4F280C /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FC88E22150E78773186D0099C6520F58 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D010664413D37EB258DAD6A9A1F873EE /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA89C140CC9A23B976BCCB500203AE19 /* NSNotificationCenter+Promise.swift */; };
 		D02327A3E1211024A5131EDFF8D06A11 /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CDA41A864505003BBCE95BC8EB9885 /* AnyPromise.m */; };
 		D358A828E68E152D06FC8E35533BF00B /* OMGHTTPURLRQ-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB24E60A1A97F3D25B30A5DD8C86BFA /* OMGHTTPURLRQ-dummy.m */; };
 		D5E313A7AB1F5A83A23958C05C55E36E /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9124DEE55FE4EAE06CF52225B26CB /* after.m */; };
@@ -604,7 +601,6 @@
 				5555B0888D49CA34A6DDBFC2836FC677 /* AnyPromise.h in Headers */,
 				13BB07872B0FFA08D0D227FECF395697 /* CALayer+AnyPromise.h in Headers */,
 				BE528F2F64CE3CCF42B8C68B028A0CD3 /* NSError+Cancellation.h in Headers */,
-				9E6F3B70813F67969771FD436FCDE5F8 /* NSNotificationCenter+AnyPromise.h in Headers */,
 				450E93C83C42D00FF62704E2FD792A0F /* NSURLConnection+AnyPromise.h in Headers */,
 				CD7972AEF7DFBB35BD6306647E4F280C /* PromiseKit.h in Headers */,
 				FA3B366AEAEB3855F951B009E6BF9958 /* UIActionSheet+AnyPromise.h in Headers */,
@@ -827,8 +823,6 @@
 				C22455256ED095B28255224C6E84A5D3 /* hang.m in Sources */,
 				BCE1FE1E18E479742FDB8105E375439E /* join.m in Sources */,
 				DD9AD5298896566D385923646ABB11B6 /* join.swift in Sources */,
-				686F6C9643E8D8B34E4449E2DA7613C6 /* NSNotificationCenter+AnyPromise.m in Sources */,
-				D010664413D37EB258DAD6A9A1F873EE /* NSNotificationCenter+Promise.swift in Sources */,
 				7348D9C9403FA8B9C544BF5E08B59205 /* NSObject+Promise.swift in Sources */,
 				F6B7D3968D2E0FB3855BB75D34C6A61A /* NSURLConnection+AnyPromise.m in Sources */,
 				C7C1732EC5B43818803E217FEA36D7DD /* NSURLConnection+Promise.swift in Sources */,
