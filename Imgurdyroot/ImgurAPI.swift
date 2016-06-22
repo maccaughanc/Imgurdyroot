@@ -20,6 +20,7 @@ enum endpointURL: String {
 }
 
 
+
 struct ImgurAPI {
     
     private static let clientID = "f0c8cd7b0e81af2"
@@ -41,18 +42,22 @@ struct ImgurAPI {
         
         // JSON photo data contained in array to initialize photos
         for (_, subJson):(String, JSON) in json["data"] {
-            if let id = subJson["id"].string,
+            guard let id = subJson["id"].string,
                 title = subJson["title"].string,
                 dateTime = subJson["datetime"].int,
                 isAlbum = subJson["is_album"].bool,
-                imageCount = subJson["images_count"].int {
-                
-                photos.append(Photo.init(id: id,
+                imageCount = subJson["images_count"].int else {
+                    
+                    continue
+            }
+            
+            photos.append(
+                Photo.init(
+                    id: id,
                     title: title,
                     dateTime: dateTime,
                     imageCount: imageCount,
                     isAlbum: isAlbum))
-            }
         }
         
         return photos
@@ -65,8 +70,10 @@ struct ImgurAPI {
         var path: String
         if photo.isAlbum {
             path = endpointURL.albumGallery.rawValue
+            
         } else {
             path = endpointURL.imageGallery.rawValue
+            
         }
         path.appendContentsOf(photo.id)
         
@@ -81,12 +88,15 @@ struct ImgurAPI {
             let url = NSURL(string: urlString) else {
                 return nil
             }
+            
             return url
+            
         } else {
             guard let urlString = json["data"]["link"].string,
             let url = NSURL(string: urlString) else {
                 return nil
             }
+            
             return url
         }
     }

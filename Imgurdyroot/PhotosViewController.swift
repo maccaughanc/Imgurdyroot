@@ -67,14 +67,6 @@ class PhotosViewController: UIViewController,
         collectionView.collectionViewLayout.invalidateLayout()
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-    }
-    
     
     // Adapts size of collection view cells to display four in a row
     func collectionView(collectionView: UICollectionView,
