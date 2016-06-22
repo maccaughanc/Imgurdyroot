@@ -67,6 +67,14 @@ class PhotosViewController: UIViewController,
         collectionView.collectionViewLayout.invalidateLayout()
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
+    
     
     // Adapts size of collection view cells to display four in a row
     func collectionView(collectionView: UICollectionView,
@@ -75,10 +83,10 @@ class PhotosViewController: UIViewController,
         
         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
         
-        // Give enough space for four images in a row
+        // Give enough space for three images in a row
         let width = (collectionView.frame.width - flowLayout.sectionInset.left -
             flowLayout.sectionInset.right -
-            flowLayout.minimumInteritemSpacing*3) / 4
+            flowLayout.minimumInteritemSpacing*2) / 3
         
         return CGSize(width: width, height: width)
     }

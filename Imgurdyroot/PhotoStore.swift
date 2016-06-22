@@ -103,7 +103,7 @@ class PhotoStore {
                         fulfill(url)
                         
                     case .Failure(let error):
-                        print(error)
+                        rejection(error)
                     }
             }
         }

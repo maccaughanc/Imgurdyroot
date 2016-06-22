@@ -70,8 +70,6 @@ struct ImgurAPI {
         }
         path.appendContentsOf(photo.id)
         
-        print(url.URLByAppendingPathComponent(path, isDirectory: false))
-        
         return url.URLByAppendingPathComponent(path, isDirectory: false)
     }
     
