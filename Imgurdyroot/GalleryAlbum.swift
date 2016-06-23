@@ -16,7 +16,7 @@ class GalleryAlbum {
     let dateTime: NSDate
     let coverID: String
     let views: Int
-    let link: NSURL
+    let url: NSURL
     let upVotes: Int
     let downVotes: Int
     let imageCount: Int
@@ -37,14 +37,15 @@ class GalleryAlbum {
         self.id = id
         self.title = title
         self.description = description
-        self.dateTime = NSDate.init(timeIntervalSince1970: Double(dateTime))
         self.coverID = coverID
         self.views = views
-        self.link = NSURL(string: link)!
+        self.url = NSURL(string: link)!
         self.upVotes = upVotes
         self.downVotes = downVotes
         self.imageCount = imageCount
         self.images = images
+        
+        self.dateTime = NSDate.init(timeIntervalSince1970: Double(dateTime))
     }
     
 }
