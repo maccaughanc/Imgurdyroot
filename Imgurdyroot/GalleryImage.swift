@@ -13,11 +13,11 @@ class GalleryImage {
     let id: String
     let title: String
     let description: String
-    let dateTime: Int
+    let dateTime: NSDate
     let type: String
     let views: Int
-    let link: String
-    let mp4: String?
+    let url: NSURL
+    let mp4: NSURL?
     let commentCount: Int
     let upVotes: Int
     let downVotes: Int
@@ -37,14 +37,21 @@ class GalleryImage {
         self.id = id
         self.title = title
         self.description = description
-        self.dateTime = dateTime
         self.type = type
         self.views = views
-        self.link = link
-        self.mp4 = mp4
+        self.url = NSURL(string: link)!
         self.commentCount = commentCount
         self.upVotes = upVotes
         self.downVotes = downVotes
+        
+        // Convert UNIX time to NSDate
+        self.dateTime = NSDate.init(timeIntervalSince1970: Double(dateTime))
+        
+        if let mp4 = mp4 {
+            self.mp4 = NSURL(string: mp4)
+        } else {
+            self.mp4 = nil
+        }
     }
     
 }

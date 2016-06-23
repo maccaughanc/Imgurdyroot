@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6631F9C01D1B5A7C0004B9C3 /* GalleryAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631F9BE1D1B5A7C0004B9C3 /* GalleryAlbum.swift */; };
+		6631F9C11D1B5A7C0004B9C3 /* GalleryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631F9BF1D1B5A7C0004B9C3 /* GalleryImage.swift */; };
+		6631F9C31D1B5D580004B9C3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631F9C21D1B5D580004B9C3 /* Image.swift */; };
 		66A79BC41D1530840025FC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A79BC21D1530840025FC59 /* Main.storyboard */; };
 		66A79BC61D1530840025FC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A79BC51D1530840025FC59 /* Assets.xcassets */; };
 		66A79BC91D1530840025FC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A79BC71D1530840025FC59 /* LaunchScreen.storyboard */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		0626E19059EB5C7DA2802AEA /* Pods-Imgurdyroot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imgurdyroot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imgurdyroot/Pods-Imgurdyroot.release.xcconfig"; sourceTree = "<group>"; };
+		6631F9BE1D1B5A7C0004B9C3 /* GalleryAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryAlbum.swift; sourceTree = "<group>"; };
+		6631F9BF1D1B5A7C0004B9C3 /* GalleryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryImage.swift; sourceTree = "<group>"; };
+		6631F9C21D1B5D580004B9C3 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		66A79BBB1D1530840025FC59 /* Imgurdyroot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgurdyroot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A79BC31D1530840025FC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66A79BC51D1530840025FC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 			children = (
 				66BF702D1D17902600690E58 /* ImgurAPI.swift */,
 				66BF702E1D17902600690E58 /* Photo.swift */,
+				6631F9BE1D1B5A7C0004B9C3 /* GalleryAlbum.swift */,
+				6631F9C21D1B5D580004B9C3 /* Image.swift */,
+				6631F9BF1D1B5A7C0004B9C3 /* GalleryImage.swift */,
 				66BF702F1D17902600690E58 /* PhotoDataSource.swift */,
 				66BF70301D17902600690E58 /* PhotoStore.swift */,
 			);
@@ -247,8 +256,11 @@
 				66BF70341D17902600690E58 /* PhotoStore.swift in Sources */,
 				66BF70291D178FC000690E58 /* PhotosViewController.swift in Sources */,
 				66BF70311D17902600690E58 /* ImgurAPI.swift in Sources */,
+				6631F9C11D1B5A7C0004B9C3 /* GalleryImage.swift in Sources */,
 				66BF702C1D178FC000690E58 /* AppDelegate.swift in Sources */,
+				6631F9C01D1B5A7C0004B9C3 /* GalleryAlbum.swift in Sources */,
 				66BF702A1D178FC000690E58 /* PhotoCollectionViewCell.swift in Sources */,
+				6631F9C31D1B5D580004B9C3 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
